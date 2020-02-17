@@ -20,4 +20,4 @@ export const getPage = (index, name) =>
 
 export const listName = () => ajax.pureGet("/admin/department/names");
 
-export const pageSize = 20;
+export const pageSize = 15;

@@ -19,7 +19,6 @@ import AdminTeacher from "./views/admin/AdminTeacher";
 import AdminCourse from "./views/admin/AdminCourse";
 import AdminStudentCourse from "./views/admin/AdminStudentCourse";
 import AdminAdmin from "./views/admin/AdminAdmin";
-import Home from "./views/Home";
 
 Vue.use(VueRouter);
 
@@ -29,11 +28,6 @@ const routes = [
     name: "container",
     component: Container,
     children: [
-      {
-        path: "/student",
-        name: "student-home",
-        component: Home
-      },
       {
         path: "/student/course/select",
         name: "student-course-select",
@@ -65,11 +59,6 @@ const routes = [
         component: StudentInfo
       },
       {
-        path: "/teacher",
-        name: "teacher-home",
-        component: Home
-      },
-      {
         path: "/teacher/course",
         name: "teacher-course",
         component: TeacherCourse
@@ -83,11 +72,6 @@ const routes = [
         path: "/teacher/grade",
         name: "teacher-grade",
         component: TeacherGrade
-      },
-      {
-        path: "/admin",
-        name: "admin-home",
-        component: Home
       },
       {
         path: "/admin/department",

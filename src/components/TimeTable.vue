@@ -18,11 +18,13 @@
             <span class="course-name">
               {{ tableData[courseIndex][index].courseName }}
             </span>
-            <p class="teacher-name">
-              {{ tableData[courseIndex][index].teacherName }}
-            </p>
-            <p class="location-name">
-              {{ tableData[courseIndex][index].location }}
+            <p>
+              <span class="teacher-name">
+                {{ tableData[courseIndex][index].teacherName }}
+              </span>
+              <span class="location-name">
+                {{ tableData[courseIndex][index].location }}
+              </span>
             </p>
           </td>
         </tr>
@@ -115,7 +117,7 @@ table {
 
     th {
       color: #fff;
-      line-height: 17px;
+      line-height: 40px;
       font-weight: normal;
     }
   }
@@ -126,7 +128,7 @@ table {
     td {
       line-height: 0;
       color: #677998;
-      height: 50px;
+      height: 70px;
 
       span {
         line-height: 0.9;
@@ -143,16 +145,14 @@ table {
   th,
   td {
     width: 60px;
-    padding: 2px 2px;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
   }
 
   tr td:first-child {
     color: #333;
-
     .period {
-      font-size: 8px;
+      font-size: 15px;
     }
   }
 }

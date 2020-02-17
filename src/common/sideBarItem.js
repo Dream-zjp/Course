@@ -5,13 +5,6 @@ let SideBarItem = {};
 
 SideBarItem.items = [
   {
-    icon: "el-icon-fa fa-bar-chart",
-    index: "/student",
-    title: "学生首页",
-    userType: UserType.student,
-    permission: Permission.no
-  },
-  {
     icon: "el-icon-fa fa-book",
     index: "/student/course/select",
     title: "选修课程",
@@ -54,13 +47,6 @@ SideBarItem.items = [
     permission: Permission.no
   },
   {
-    icon: "el-icon-fa fa-bar-chart",
-    index: "/teacher",
-    title: "教师首页",
-    userType: UserType.teacher,
-    permission: Permission.no
-  },
-  {
     icon: "el-icon-fa fa-book",
     index: "/teacher/course",
     title: "授课查询",
@@ -79,13 +65,6 @@ SideBarItem.items = [
     index: "/teacher/grade",
     title: "成绩录入",
     userType: UserType.teacher,
-    permission: Permission.no
-  },
-  {
-    icon: "el-icon-fa fa-bar-chart",
-    index: "/admin",
-    title: "管理员首页",
-    userType: UserType.admin,
     permission: Permission.no
   },
   {

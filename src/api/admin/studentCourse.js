@@ -22,4 +22,4 @@ export const getPage = (index, className, courseName, studentName) =>
     studentName: studentName
   });
 
-export const pageSize = 20;
+export const pageSize = 15;

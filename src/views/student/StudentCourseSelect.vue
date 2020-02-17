@@ -33,18 +33,6 @@
         </el-row>
       </div>
 
-      <el-row justify="center" type="flex">
-        <el-pagination
-          :current-page.sync="pageIndex"
-          :page-size="pageSize"
-          :total="pageSize * pageCount"
-          @current-change="getPage"
-          background
-          layout="prev, pager, next"
-        >
-        </el-pagination>
-      </el-row>
-
       <div class="table">
         <el-table :data="tableData" stripe>
           <el-table-column label="课程Id" prop="courseId" />
@@ -71,6 +59,10 @@
           </el-table-column>
         </el-table>
       </div>
+      <el-row justify="center" type="flex" class="pagination">
+        <el-pagination :current-page.sync="pageIndex" :page-size="pageSize" :total="pageSize * pageCount" @current-change="getPage" background layout="prev, pager, next">
+        </el-pagination>
+      </el-row>
     </div>
   </div>
 </template>
