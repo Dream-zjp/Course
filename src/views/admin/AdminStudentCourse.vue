@@ -30,14 +30,14 @@
             <el-input
               @keyup.enter.native="query"
               placeholder="课程名"
-              v-model="queryForm.name"
+              v-model="queryForm.courseName"
             />
           </el-col>
           <el-col :span="3">
             <el-input
               @keyup.enter.native="query"
-              placeholder="专业名"
-              v-model="queryForm.majorName"
+              placeholder="学生名"
+              v-model="queryForm.studentName"
             />
           </el-col>
           <el-col :span="3">

@@ -68,6 +68,13 @@ SideBarItem.items = [
     permission: Permission.no
   },
   {
+    icon: "el-icon-fa fa-book",
+    index: "/teacher/student/course",
+    title: "学生选课",
+    userType: UserType.teacher,
+    permission: Permission.no
+  },
+  {
     icon: "el-icon-fa fa-fort-awesome",
     index: "/admin/department",
     title: "系管理",

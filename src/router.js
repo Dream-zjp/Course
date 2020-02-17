@@ -11,6 +11,7 @@ import StudentScore from "./views/student/StudentScore";
 import TeacherCourse from "./views/teacher/TeacherCourse";
 import TeacherTimetable from "./views/teacher/TeacherTimetable";
 import TeacherGrade from "./views/teacher/TeacherGrade";
+import TeacherStudentCourse from "./views/teacher/TeacherStudentCourse";
 import AdminDepartment from "./views/admin/AdminDepartment";
 import AdminMajor from "./views/admin/AdminMajor";
 import AdminClass from "./views/admin/AdminClass";
@@ -72,6 +73,11 @@ const routes = [
         path: "/teacher/grade",
         name: "teacher-grade",
         component: TeacherGrade
+      },
+      {
+        path: "/teacher/student/course",
+        name: "teacher-student-course",
+        component: TeacherStudentCourse
       },
       {
         path: "/admin/department",
