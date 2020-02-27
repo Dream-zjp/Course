@@ -1,5 +1,5 @@
 let Config = {};
 
-Config.backEndUrl = "http://localhost:9091";
+Config.backEndUrl = "/api";
 
 export default Config;
