@@ -108,21 +108,6 @@
           <el-form-item label="邮箱">
             <el-input v-model="entityForm.email"></el-input>
           </el-form-item>
-          <el-form-item label="生日">
-            <el-date-picker
-              format="yyyy-MM-dd"
-              placeholder="选择生日"
-              type="date"
-              v-model="entityForm.birthday"
-            >
-            </el-date-picker>
-          </el-form-item>
-          <el-form-item label="性别">
-            <el-radio-group v-model="entityForm.sex">
-              <el-radio :label="1">男</el-radio>
-              <el-radio :label="0">女</el-radio>
-            </el-radio-group>
-          </el-form-item>
         </el-form>
         <span class="dialog-footer" slot="footer">
           <el-button @click="save" type="primary">确 定</el-button>

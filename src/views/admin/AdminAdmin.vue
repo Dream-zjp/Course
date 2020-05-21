@@ -27,12 +27,12 @@
               <el-button @click="edit(scope.row.id)" size="mini" type="success"
                 >编辑
               </el-button>
-              <el-button
+              <!--<el-button
                 @click="deleteItem(scope.row.id)"
                 size="mini"
                 type="danger"
                 >删除
-              </el-button>
+              </el-button>-->
             </template>
           </el-table-column>
         </el-table>

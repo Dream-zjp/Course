@@ -12,7 +12,7 @@
       <div class="query-form">
         <el-row :gutter="20">
           <el-col :span="2">
-            <el-button @click="create" icon="el-icon-plus">创建</el-button>
+<!--            <el-button @click="create" icon="el-icon-plus">创建</el-button>-->
           </el-col>
           <el-col :span="2">
             <el-checkbox

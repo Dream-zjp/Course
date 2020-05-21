@@ -3,7 +3,7 @@
     <div class="header-ico">
       <i class="el-icon-s-home"></i>
     </div>
-    <div class="logo">课程管理系统</div>
+    <div class="logo">内蒙古大学学生选课系统</div>
     <div class="head-right">
       <div class="head-user-con">
         <div @click="handleFullScreen" class="btn-fullscreen">
@@ -49,7 +49,7 @@ export default {
       if (command === "logout") {
         logout().then(() => {
           this.$store.commit("logout");
-          this.$message.success("注销成功");
+          this.$message.success("退出成功");
           this.$router.push("/login");
         });
       }

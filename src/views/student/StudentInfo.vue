@@ -82,7 +82,9 @@ export default {
     },
     update() {
       api.update(this.entityForm).then(() => {
-        this.$message.success("更新信息成功!");
+        this.$message.success("更新信息成功，请重新登录!");
+        this.$store.commit("logout");
+        this.$router.push("/login");
       });
     }
   },
