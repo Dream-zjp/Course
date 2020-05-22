@@ -1,7 +1,7 @@
 <template>
   <div class="login-wrap">
     <div class="login-form">
-      <div class="form-title">内蒙古大学学生选课系统</div>
+      <div class="form-title">学生选课系统</div>
       <el-form
         :model="formData"
         :rules="rules"
